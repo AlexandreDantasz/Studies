@@ -2,7 +2,7 @@
     Autor: Alexandre Dantas de Mendonça
     Data: 28/08/2023
     Objetivo: Montar o algoritmo Quicksort e testar o mesmo.
-    Complexidade do Quicksort no pior caso: O(N^2).
+    Complexidade do algoritmo no pior caso: O(N^2).
 */
 
 #include <iostream>

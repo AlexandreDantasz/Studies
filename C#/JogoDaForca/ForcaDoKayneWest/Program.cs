@@ -2,8 +2,7 @@
     Autor: Alexandre Dantas de Mendonça
     Data: 29/08/2023
     Objetivo: Criar um jogo da forca, que utiliza palavras das frases (pérolas) do Kayne West, para rodar no Console.
-    Observações: Permitir a entrada de uma palavra inteira, 
-    permitir letras maiúsculas e minúsculas, evitar letras repetidas, evitar pontuações.
+    Observações: Permitir letras maiúsculas e minúsculas, evitar letras repetidas, evitar pontuações.
 */
 
 using System;
@@ -66,6 +65,7 @@ namespace ForcaDoKayneWest {
                     string [] dictionary = responseBody.Split(' ');
                     int wordIndex = TheBigOne(dictionary);
                     Console.WriteLine("A palavra contém {0} letras", dictionary[wordIndex].Length);
+                    string answer = dictionary[wordIndex].ToUpper(); //A palavra será maiúscula para validações
                     string WordInterface = "";
                     for (int i = 0; i < dictionary[wordIndex].Length; i++) WordInterface += '_';
                     int tentativas = 0;
@@ -79,7 +79,8 @@ namespace ForcaDoKayneWest {
                             input = Console.ReadLine();
                         }
                         int mudou = 0;
-                        if (input.Length == 1) WordInterface = Change(dictionary[wordIndex], WordInterface,  input[0], ref mudou);
+                        input = input.ToUpper(); //Transforma o input em maiúsculo para validações
+                        if (input.Length == 1) WordInterface = Change(answer, WordInterface,  input[0], ref mudou);
                         else { //se não for uma letra, verifica se a palavra é a correta
                             if (input == dictionary[wordIndex]) {
                                 mudou = 1;

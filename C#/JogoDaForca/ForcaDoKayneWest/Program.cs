@@ -2,7 +2,7 @@
     Autor: Alexandre Dantas de Mendonça
     Data: 29/08/2023
     Objetivo: Criar um jogo da forca, que utiliza palavras das frases (pérolas) do Kayne West, para rodar no Console.
-    Observações: Permitir letras maiúsculas e minúsculas, evitar letras repetidas, evitar pontuações.
+    Observações: Evitar letras repetidas, evitar pontuações, limpar console após cada tentativa.
 */
 
 using System;
@@ -52,6 +52,15 @@ namespace ForcaDoKayneWest {
             for (i = 0; i < word.Length && word[i] != '_'; i++);
             return i < word.Length; 
         }
+
+        static bool Used(string listaDeLetras, char letra) {
+            string letraUsada = letra.ToString();
+            letraUsada = letraUsada.ToUpper();
+            int i;
+            for (i = 0; i < listaDeLetras.Length && listaDeLetras[i] != letraUsada[0]; i++);
+            if (i != listaDeLetras.Length) Console.WriteLine("Essa letra já foi usada!");
+            return i != listaDeLetras.Length;
+        }
         static async Task Main(string[] args) {
             Console.WriteLine("Esse Jogo da forca é feito com as frases do Kayne West!");
             Console.WriteLine("Vamos te dar a primeira palavra de uma frase\nSeu objetivo é acertar a palavra com até 10 tentativas!");
@@ -59,6 +68,7 @@ namespace ForcaDoKayneWest {
             HttpClient httpClient = new HttpClient();
             string apiUrl = "https://api.kanye.rest/text";
             while (Menu()) {
+                string listaDeLetras = "";
                 HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
                 if (response.IsSuccessStatusCode) {
                     string responseBody = await response.Content.ReadAsStringAsync();
@@ -74,13 +84,17 @@ namespace ForcaDoKayneWest {
                         Console.WriteLine("Palavra: {0}", WordInterface);
                         Console.Write("Digite a letra: ");
                         string input = Console.ReadLine();
-                        while (String.IsNullOrEmpty(input)) { //verifica se o usuário digitou alguma coisa
+                        while (String.IsNullOrEmpty(input) || (input.Length == 1 && Used(listaDeLetras, input[0]))) { //verifica se o usuário digitou alguma coisa
                             Console.Write("Digite novamente: ");
                             input = Console.ReadLine();
                         }
                         int mudou = 0;
                         input = input.ToUpper(); //Transforma o input em maiúsculo para validações
-                        if (input.Length == 1) WordInterface = Change(answer, WordInterface,  input[0], ref mudou);
+                        if (input.Length == 1) {
+
+                            listaDeLetras += input[0];
+                            WordInterface = Change(answer, WordInterface,  input[0], ref mudou);
+                        }
                         else { //se não for uma letra, verifica se a palavra é a correta
                             if (input == dictionary[wordIndex]) {
                                 mudou = 1;

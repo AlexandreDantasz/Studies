@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj": {}
+    "c:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj": {
+    "c:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj",
+        "projectUniqueName": "c:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj",
         "projectName": "ForcaDoKayneWest",
-        "projectPath": "C:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj",
+        "projectPath": "c:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\obj\\",
+        "outputPath": "c:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"

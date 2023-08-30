@@ -2,7 +2,8 @@
     Autor: Alexandre Dantas de Mendonça
     Data: 29/08/2023
     Objetivo: Criar um jogo da forca, que utiliza palavras das frases (pérolas) do Kayne West, para rodar no Console.
-    Observações: Fazer uma "interface gráfica" para as palavras e um contador de tentativas.
+    Observações: Permitir a entrada de uma palavra inteira, 
+    permitir letras maiúsculas e minúsculas, evitar letras repetidas, evitar pontuações.
 */
 
 using System;
@@ -77,6 +78,7 @@ namespace ForcaDoKayneWest {
                         else Console.WriteLine("\nAcertou!\n");
                     }
                     Console.WriteLine("\nA Palavra era: {0}", dictionary[wordIndex]);
+                    
                     Console.WriteLine(responseBody);
                 }
             }

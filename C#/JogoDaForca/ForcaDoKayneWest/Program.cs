@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+    Autor: Alexandre Dantas de Mendonça
+    Data: 29/08/2023
+    Objetivo: Criar um jogo da forca, que utiliza palavras das frases (pérolas) do Kayne West, para rodar no Console.
+*/
+
+using System;
 using System.Net.Http;
 
 namespace ForcaDoKayneWest {

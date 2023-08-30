@@ -14,7 +14,12 @@ namespace ForcaDoKayneWest {
     class JogoDaForca {
         static bool Menu() {
             Console.Write("Digite:\n1 - Para Jogar\n2 - Para sair\nResposta: ");
-            int resposta = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
+            while (String.IsNullOrEmpty(input)) { //verifica se o usuário digitou alguma coisa
+                Console.Write("Digite novamente: ");
+                input = Console.ReadLine();
+            }
+            int resposta = int.Parse(input);
             return resposta == 1;
         }
 
@@ -68,9 +73,19 @@ namespace ForcaDoKayneWest {
                         Console.WriteLine("Tentativas: {0}", tentativas);
                         Console.WriteLine("Palavra: {0}", WordInterface);
                         Console.Write("Digite a letra: ");
-                        char letra = Console.ReadLine()[0];
+                        string input = Console.ReadLine();
+                        while (String.IsNullOrEmpty(input)) { //verifica se o usuário digitou alguma coisa
+                            Console.Write("Digite novamente: ");
+                            input = Console.ReadLine();
+                        }
                         int mudou = 0;
-                        WordInterface = Change(dictionary[wordIndex], WordInterface,  letra, ref mudou);
+                        if (input.Length == 1) WordInterface = Change(dictionary[wordIndex], WordInterface,  input[0], ref mudou);
+                        else { //se não for uma letra, verifica se a palavra é a correta
+                            if (input == dictionary[wordIndex]) {
+                                mudou = 1;
+                                WordInterface = dictionary[wordIndex];
+                            }
+                        }
                         if (mudou == 0) {
                             Console.WriteLine("\nErrou!\n");
                             tentativas++;

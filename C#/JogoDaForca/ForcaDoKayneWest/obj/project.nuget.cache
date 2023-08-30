@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "te6vK0olR2i+kmX+raPig+5xNxX/SsThnBqx+yAkOYP4UiSMQLlCiqlhqBJ/eRzFC2cTmnuEhAaeLm5mMFGLOg==",
+  "dgSpecHash": "TnBxSbV3WIInHOu0wy5mZ9MHqRU8bM6mvIES2YX2n9XNhxxOLy6JjdI7o2duFF5YqL5309eYA+SRWjPUZ2P9mg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj",
+  "projectFilePath": "C:\\Users\\alexa\\Documents\\Studies\\C#\\JogoDaForca\\ForcaDoKayneWest\\ForcaDoKayneWest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

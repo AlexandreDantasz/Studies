@@ -1,0 +1,14 @@
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ForcaDoKayneWest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ForcaDoKayneWest.AssemblyInfoInputs.cache
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ForcaDoKayneWest.AssemblyInfo.cs
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ForcaDoKayneWest.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\bin\Debug\net7.0\ForcaDoKayneWest.exe
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\bin\Debug\net7.0\ForcaDoKayneWest.deps.json
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\bin\Debug\net7.0\ForcaDoKayneWest.runtimeconfig.json
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\bin\Debug\net7.0\ForcaDoKayneWest.dll
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\bin\Debug\net7.0\ForcaDoKayneWest.pdb
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ForcaDoKayneWest.dll
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\refint\ForcaDoKayneWest.dll
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ForcaDoKayneWest.pdb
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ForcaDoKayneWest.genruntimeconfig.cache
+C:\Users\alexa\Documents\Studies\C#\JogoDaForca\ForcaDoKayneWest\obj\Debug\net7.0\ref\ForcaDoKayneWest.dll

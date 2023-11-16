@@ -3,6 +3,7 @@
     Data: 29/08/2023
     Objetivo: Criar um jogo da forca, que utiliza palavras das frases (pérolas) do Kayne West, para rodar no Console.
     Observações: Evitar letras repetidas, evitar pontuações, limpar console após cada tentativa.
+    Acredito que tem algum erro na parte do upper case, é necessário testes.    
 */
 
 using System;

@@ -1,1 +1,0 @@
-In this folder, there will be exercises about graphs. Each folder will be named by the name of the site where i did the exercises.
